@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Ubuntu';
+	background-color: #d8aafc;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-height: 100vh;
+	margin: 0;
+}
+
+h1 {
+	color: #4b357c;
+}
+
+.screen {
+	cursor: pointer;
+	width: 60%;
+	background-color: #3c0a3b !important;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.controls {
+	background: #8769c3;
+	color: #ffff;
+	width: 60%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+
+.controls .btn {
+	border: 0;
+	background: transparent;
+	cursor: pointer;
+}
+
+.controls .fa-play {
+	color: #e9d2fe;
+}
+
+.controls .fa-stop {
+	color: #ff99cc;
+}
+
+.controls .fa-pause {
+	color: #e9d2fe;
+}
+
+.controls .timestamp {
+	color: #e9d2fe;
+	margin-left: 10px;
+}
+
+.btn:focus {
+	outline: 0;
+}
+
+/* <= 800 px */
+@media (max-width: 800px) {
+	/* Set from 50% to 90% */
+	.screen,
+	.controls {
+		width: 90%;
+	}
+}
